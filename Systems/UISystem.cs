@@ -10,28 +10,28 @@ namespace BossCursor.Systems;
 public class UISystem : ModSystem
 {
     private const string VanillaInterfaceLayer = "Vanilla: Entity Health Bars";
-    private UserInterface bossCursorUserInterface;
-    private UiCursor uiCursor;
+    private UserInterface _bossCursorUserInterface;
+    private UiCursor _uiCursor;
 
     public override void Load()
     {
         if (Main.dedServ) return;
-        uiCursor = new UiCursor();
-        uiCursor.Activate();
-        bossCursorUserInterface = new UserInterface();
-        bossCursorUserInterface.SetState(uiCursor);
+        _uiCursor = new UiCursor();
+        _uiCursor.Activate();
+        _bossCursorUserInterface = new UserInterface();
+        _bossCursorUserInterface.SetState(_uiCursor);
     }
 
     public override void Unload()
     {
         if (Main.dedServ) return;
-        bossCursorUserInterface = null;
-        uiCursor = null;
+        _bossCursorUserInterface = null;
+        _uiCursor = null;
     }
 
     public override void UpdateUI(GameTime gameTime)
     {
-        bossCursorUserInterface.Update(gameTime);
+        _bossCursorUserInterface.Update(gameTime);
     }
 
     public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
@@ -42,7 +42,7 @@ public class UISystem : ModSystem
             layers.Insert(index, new LegacyGameInterfaceLayer(BossCursor.Modname + ": UI",
                 delegate
                 {
-                    bossCursorUserInterface.Draw(Main.spriteBatch, new GameTime());
+                    _bossCursorUserInterface.Draw(Main.spriteBatch, new GameTime());
                     return true;
                 },
                 InterfaceScaleType.UI));

@@ -1,0 +1,11 @@
+Boss cursor adds arrows around your character that points towards the boss.
+
+This way you do not need the mini-map open to be able to properly aim.
+
+The size and transparency of the arrow changes the closer the boss is, so that you get a good feel for how far away the boss is, even when it is off screen.
+
+Using the overlay map hides the cursor.
+
+Boss cursor has ModConfig support that enables you to modify the cursors properties.
+
+Want to remove or add cursors for additional NPCs? Check out the forum thread for instructions on how to use the mod's API.

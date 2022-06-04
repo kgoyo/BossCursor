@@ -1,0 +1,10 @@
+displayName = Boss Cursor
+author = kgoyo
+version = 2.0.0
+hideCode = true
+hideResources = false
+includeSource = false
+includePDB = false
+side = Client
+buildIgnore = *.csproj, *.user, *.sln, obj\*, bin\*, .vs\*, .git\*, .gitignore, .idea\*, .gitattributes, LICENCE
+homepage = https://forums.terraria.org/index.php?threads/boss-cursor.77957/

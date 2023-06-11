@@ -1,0 +1,27 @@
+Configs: {
+	Config: {
+		BlackListPillars: {
+			Tooltip: Draw cursors for celestial pillars
+			Label: Blacklist celestial pillars
+		}
+
+		CursorSize: {
+			Tooltip: The scaling factor of the cursor.
+			Label: Cursor size scale
+		}
+
+		CursorDistance: {
+			Tooltip: The distance the cursor is from the player.
+			Label: Cursor distance
+		}
+
+		HideOnScreen: {
+			Tooltip: Hide the cursor for bosses, which are inside the view camera.
+			Label: Hide cursor for on screen bosses
+		}
+
+		DisplayName: Config
+	}
+}
+
+"Keybinds.Toggle Boss Cursor.DisplayName": Toggle  Boss  Cursor

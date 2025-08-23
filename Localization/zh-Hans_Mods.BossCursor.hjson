@@ -1,0 +1,27 @@
+Configs: {
+	Config: {
+		BlackListPillars: {
+			Tooltip: 不为天界柱绘制光标
+			Label: 隐藏天界柱的光标
+		}
+
+		CursorSize: {
+			Tooltip: 光标的缩放比例
+			Label: 光标大小比例
+		}
+
+		CursorDistance: {
+			Tooltip: 绘制光标与玩家的距离
+			Label: 光标距离
+		}
+
+		HideOnScreen: {
+			Tooltip: 隐藏在视野内的Boss的光标
+			Label: 隐藏屏幕内Boss的光标
+		}
+
+		DisplayName: 配置
+	}
+}
+
+"Keybinds.Toggle Boss Cursor.DisplayName": 开关Boss光标
